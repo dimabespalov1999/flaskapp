@@ -1,0 +1,18 @@
+appName: flaskapp
+
+namespace: lesta
+replicaCount: 1
+
+image:
+  repository: lessonlesta
+  tag: latest
+
+containerPort: 5000
+
+service:
+  type: ClusterIP
+  port: 80
+
+ingress:
+  enabled: true
+  host: lesta-lessons.ru
